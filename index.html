@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#dados-pessoais">Contatos</a></li>
+                <li><a href="#objetivos">Objetivos Profissionais</a></li>
+                <li><a href="#formacao-academica">Formação Acadêmica</a></li>
+                <li><a href="#cursos-extras">Cursos Extracurriculares</a></li>
+                <li><a href="#atividades-complementares">Atividades Complementares</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mim" class="conteudo">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-mim-container">
+                <div class="imagem-circular">
+                    <img src="image.png" alt="Sua Foto">
+                </div>
+                <div class="texto-sobre-mim">
+                    <p> Olá! Meu nome é Bernardo Rodrigues de Toledo, estudante de Ciência da Computação, movido pela curiosidade e pelo desejo constante de entender como a tecnologia transforma o mundo. Desde o primeiro contato com a programação, descobri que resolver problemas e criar novas soluções é algo que me motiva de verdade.
+                        Atualmente, estou focado em construir uma base sólida de conhecimentos, explorando áreas como desenvolvimento web, lógica de programação e inteligência artificial. Meu objetivo é me tornar um profissional capaz de criar tecnologias que façam a diferença, sempre buscando inovação, eficiência e impacto positivo. </p>
+                    <p>Este portfólio é um reflexo do meu início de trajetória — e estou apenas começando.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objetivos" class="conteudo">
+            <h2>Objetivos Profissionais</h2>
+            <p> Busco construir uma carreira sólida no desenvolvimento de software, focado em criar soluções que gerem impacto real.
+                Tenho interesse especial por desenvolvimento web e inteligência artificial, e estou comprometido em evoluir continuamente, tanto em habilidades técnicas quanto em trabalho em equipe.
+                Quero contribuir para a transformação digital com inovação, criatividade e responsabilidade.</p>
+        </section>
+
+        <section id="formacao-academica" class="conteudo">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>
+                    <strong>2024 - 2028</strong>
+                    Ciencia da Computação, Atitus Educação
+                    <p>Neste curso estou aprendendo a desenvolver soluções inovadoras aliadas a programação, inteligencia articial e banco de dados.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="cursos-extras" class="conteudo">
+            <h2>Cursos Extracurriculares</h2>
+            <ul>
+                <li>
+                    <strong>2024</strong>
+                    AWS Academy Cloud Foundations, AWS academy
+                    <p>Esse curso é uma introdução aos conceitos básicos de computação em nuvem, serviços AWS e melhores práticas de arquitetura.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="atividades-complementares" class="conteudo">
+            <h2>Atividades Complementares</h2>
+            <ul>
+                <li>
+                    <strong>2024 - Atualmenete</strong>
+                    <p>Implantação Técnica, Alpino Tecnologia</p>
+                    <p>A Implantação Técnica envolve a configuração, instalação e ativação de sistemas, softwares ou serviços em ambientes de produção.</p>
+                    <p>Alem de testes de funcionamento e treinamento de úsuario.</p>
+
+                </li>
+            </ul>
+        </section>
+
+        <section id="tecnologias" class="conteudo">
+            <h2>Tecnologias</h2>
+            <div class="painel-container">
+                <div class="painel-tecnologias">
+                    <h3>Linguagens de Programação</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="painel-tecnologias">
+                    <h3>Ferramentas</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="painel-tecnologias">
+                    <h3>Outras Habilidades</h3>
+                    <ul>
+                        <li>Design Responsivo</li>
+                        <li>Otimização de Performance</li>
+                        <li>Acessibilidade Web</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="dados-pessoais" class="conteudo">
+            <h2>Contatos</h2>
+            <p><strong>Nome:</strong> Bernardo Rodrigues de Toledo</p>
+            <p><strong>Email:</strong> btoledo586@gmail.com</p>
+            <p><strong>Telefone:</strong> (55) 99630-5140</p>
+            <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/bernardo-rodrigues-de-toledo-4815962b8" target="_blank">www.linkedin.com/in/bernardo-rodrigues-de-toledo-4815962b8</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bernardo Rodrigues de Toledo</p>
+    </footer>
+
+    <script>
+        const toggleDarkModeButton = document.getElementById('toggleDarkMode');
+        const body = document.body;
+        const darkModeClass = 'dark-mode';
+
+        function enableDarkMode() {
+            body.classList.add(darkModeClass);
+            toggleDarkModeButton.textContent = 'Modo Claro';
+            localStorage.setItem('theme', 'dark');
+        }
+
+        function disableDarkMode() {
+            body.classList.remove(darkModeClass);
+            toggleDarkModeButton.textContent = 'Modo Escuro';
+            localStorage.setItem('theme', 'light');
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            enableDarkMode();
+        } else if (savedTheme === 'light') {
+            disableDarkMode();
+        } else {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                enableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        }
+
+        toggleDarkModeButton.addEventListener('click', () => {
+            if (body.classList.contains(darkModeClass)) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                enableDarkMode();
+            } else {
+                disableDarkMode();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
